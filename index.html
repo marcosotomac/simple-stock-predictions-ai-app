@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Professional AI-powered stock analysis and prediction tool"
+    />
+    <meta
+      name="keywords"
+      content="stock analysis, AI predictions, financial insights, trading"
+    />
+    <title>Smart Stock Analyzer - AI-Powered Financial Insights</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <span class="logo-icon">📈</span>
+          <h1>Smart Stock Analyzer</h1>
+        </div>
+        <p class="subtitle">AI-Powered Financial Insights</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <h2>Analyze Stock Performance with AI</h2>
+        <p class="hero-description">
+          Get intelligent insights and predictions for your stock portfolio
+          using advanced AI analysis
+        </p>
+      </section>
+
+      <section class="action-panel" id="input-section">
+        <div class="panel-header">
+          <h3>Stock Analysis</h3>
+          <p class="panel-description">
+            Enter up to 3 stock tickers to generate your personalized analysis
+            report
+          </p>
+        </div>
+
+        <form id="ticker-input-form" class="ticker-form">
+          <div class="input-group">
+            <label for="ticker-input" class="input-label"
+              >Stock Ticker Symbol</label
+            >
+            <div class="form-input-control">
+              <input
+                type="text"
+                id="ticker-input"
+                placeholder="e.g., AAPL, TSLA, MSFT"
+                aria-describedby="ticker-help"
+                maxlength="10"
+                autocomplete="off"
+                spellcheck="false"
+              />
+              <button
+                type="submit"
+                class="add-ticker-btn"
+                aria-label="Add ticker"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M12 5v14M5 12h14" />
+                </svg>
+              </button>
+            </div>
+            <small id="ticker-help" class="help-text"
+              >Enter a valid stock ticker symbol (3+ characters)</small
+            >
+          </div>
+        </form>
+
+        <div class="ticker-display-section">
+          <div class="ticker-choice-display" id="ticker-list">
+            <p class="placeholder-text">
+              Your selected tickers will appear here...
+            </p>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <button
+            class="generate-report-btn"
+            type="button"
+            disabled
+            id="generate-btn"
+          >
+            <span class="btn-text">Generate Analysis Report</span>
+            <span class="btn-icon">🚀</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="loading-panel" id="loading-section">
+        <div class="loading-content">
+          <div class="loading-spinner"></div>
+          <h3>Analyzing Market Data</h3>
+          <div id="api-message" class="loading-message">
+            Fetching stock data...
+          </div>
+          <div class="loading-steps">
+            <div class="step active" id="step-1">Collecting market data</div>
+            <div class="step" id="step-2">Processing with AI</div>
+            <div class="step" id="step-3">Generating insights</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="output-panel" id="results-section">
+        <div class="panel-header">
+          <h3>Analysis Report</h3>
+          <button class="new-analysis-btn" onclick="resetAnalysis()">
+            New Analysis
+          </button>
+        </div>
+        <div class="report-content" id="report-content">
+          <!-- Report will be generated here -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="disclaimer">
+          <p>
+            <strong>Disclaimer:</strong> This tool provides AI-generated
+            analysis for educational purposes only. Not actual financial advice.
+          </p>
+        </div>
+        <div class="footer-links">
+          <p>&copy; 2024 Smart Stock Analyzer. Built with AI technology.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

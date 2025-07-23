@@ -1,0 +1,31 @@
+{
+  "name": "smart-stock-analyzer",
+  "version": "1.0.0",
+  "description": "Professional AI-powered stock analysis and prediction tool",
+  "main": "index.js",
+  "keywords": [
+    "stock",
+    "analysis",
+    "ai",
+    "prediction",
+    "finance",
+    "trading"
+  ],
+  "author": "Smart Stock Analyzer Team",
+  "license": "MIT",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "echo 'No linter configured'",
+    "test": "echo 'No tests configured'"
+  },
+  "dependencies": {
+    "vite": "^5.0.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
