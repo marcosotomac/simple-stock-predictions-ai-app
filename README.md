@@ -1,4 +1,4 @@
-# Smart Stock Analyzer
+# Fast (simple) Smart Stock Analyzer
 
 A professional AI-powered stock analysis tool that provides intelligent insights and predictions for stock portfolio management using advanced artificial intelligence.
 
@@ -109,29 +109,6 @@ const CONFIG = {
   DEBOUNCE_DELAY: 300, // Input debounce delay
 };
 ```
-
-## 📱 Browser Support
-
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
-
-## 🎨 Design System
-
-### Color Palette
-
-- **Primary**: Blue (#2563eb)
-- **Secondary**: Green (#059669)
-- **Accent**: Purple (#7c3aed)
-- **Neutral**: Gray scale (50-900)
-
-### Typography
-
-- **Primary Font**: Inter
-- **Monospace Font**: JetBrains Mono
-- **Font Weights**: 300, 400, 500, 600, 700
-
 ## 🔒 Security & Privacy
 
 - No personal data is stored locally or transmitted
@@ -146,27 +123,7 @@ const CONFIG = {
 - Debounced input validation
 - Efficient DOM updates with modern JavaScript
 
-## 🧪 Testing
-
-Currently, the project doesn't have automated tests configured. To add testing:
-
-```bash
-# Install testing dependencies
-npm install --save-dev vitest @testing-library/dom
-
-# Add test script to package.json
-"test": "vitest"
-```
-
 ## 🚀 Deployment
-
-### Static Hosting (Recommended)
-
-The app can be deployed to any static hosting service:
-
-- **Vercel**: `vercel --prod`
-- **Netlify**: Drag and drop the `dist` folder
-- **GitHub Pages**: Push the `dist` folder to `gh-pages` branch
 
 ### Docker Deployment
 
@@ -202,22 +159,6 @@ npm run preview  # Preview production build
 npm run lint     # Run linting (when configured)
 ```
 
-### Code Style
-
-- Use ES6+ features
-- Follow semantic HTML principles
-- Implement CSS custom properties for theming
-- Write self-documenting code with clear variable names
-- Use JSDoc comments for functions
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 ### Development Guidelines
 
 - Follow the existing code style
@@ -225,29 +166,7 @@ npm run lint     # Run linting (when configured)
 - Test your changes thoroughly
 - Update documentation as needed
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## ⚠️ Disclaimer
 
 **Important**: This tool provides AI-generated analysis for educational and informational purposes only. The analysis should not be considered as financial advice. Always consult with qualified financial advisors before making investment decisions. Past performance does not guarantee future results.
 
-## 🙏 Acknowledgments
-
-- **Polygon.io** for providing reliable stock market data
-- **OpenAI** for powering the intelligent analysis
-- **Vite** for the excellent development experience
-- **Inter & JetBrains Mono** fonts for typography
-
-## 📞 Support
-
-For support, feature requests, or bug reports:
-
-1. Check existing [GitHub Issues](issues)
-2. Create a new issue with detailed description
-3. Include browser version and steps to reproduce
-
----
-
-**Built with ❤️ for smart investors**
